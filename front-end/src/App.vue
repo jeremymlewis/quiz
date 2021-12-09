@@ -3,18 +3,18 @@
   <div class="header">
     <router-link to="/">
       <div class="logo">
-        <img src="/ordinary.png">
+        <img src="/home.png">
       </div>
     </router-link>
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>True or False</h1>
     </div>
   </div>
   <div class="content">
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link>
+    <p><a href="https://github.com/jeremymlewis/quiz">github repo (2021 jeremymlewis)<a></p>
   </div>
 </div>
 </template>
@@ -27,28 +27,31 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background: #fff;
   padding: 0px;
   margin: 0px;
 }
 
 /* Header */
 .header {
+  justify-content: center;
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
-  color: #1C454F;
+  background-color: #DDC67B;
+  color: #291F1E;
+}
+
+.logo img {
+  max-height: 64px;
 }
 
 .title {
   margin-top: 5px;
 }
 
-.title h1 {
-  font-size: 30px;
-}
+
 
 .content {
+  background-color: #B38CB4;
   padding: 20px 100px;
   min-height: 500px;
 }
@@ -57,7 +60,7 @@ body {
 .footer {
   height: 50px;
   padding: 20px 100px 0px 100px;
-  background: #e3e3e3;
+  background: #F8F272;
   font-size: 12px;
 }
 
@@ -65,11 +68,9 @@ body {
   color: #000;
 }
 
-h1 {
-  font-size: 20px;
+h2 {
+  font-size: 18px;
 }
 
-h2 {
-  font-size: 14px;
-}
+
 </style>
